@@ -11,7 +11,7 @@ void setup () {
   fighter = loadImage("img/fighter.png");
   hp = loadImage("img/hp.png");
   treasure = loadImage("img/treasure.png");
-  a=floor(random(210));
+  a=floor(random(195));
   x=floor(random(600));
   y=floor(random(440));
   h=floor(random(420));
@@ -21,8 +21,9 @@ void draw() {
   
   image(bg1,i,0);
   image(bg2,i-640,0);
+  image(bg1,i-1280,0);
   i++;
-  i%=640;
+  i%=1280;
   
   fill(255,0,0);
   rect(10,0,a,20);
